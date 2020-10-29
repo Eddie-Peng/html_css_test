@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<style type="text/css">
+			body {
+				background-color: #D3D3D3;
+			}
+
+			.imgs-list {
+				width: 590px;
+				height: 470px;
+				margin: 50px auto;
+				position: relative;
+			}
+
+			.imgs-list li {
+				position: absolute;
+			}
+
+			.imgs-list li:nth-child(4) {
+				z-index: 3;
+			}
+
+			.button-list {
+				z-index: 999;
+				position: absolute;
+				bottom: 20px;
+				left: 40px;
+			}
+
+			.button-list a {
+				float: left;
+				width: 10px;
+				height: 10px;
+				/* background-color: rgba(255,255,255,.3);
+				border: 2px solid transparent;
+				border-radius: 50%; */
+				border-radius: 50%;
+				background-color: rgba(255, 255, 255, .3);
+				/* 将背景颜色值设置到内容区，边框和内边距不在有背景颜色 */
+				background-clip: content-box;
+				/* background-clip需要记 */
+				border: 2px solid transparent;
+				margin: 0 3px;
+			}
+
+			.button-list a.actived,
+			.button-list a:hover {
+				background-color: white;
+				border: 2px rgba(255, 255, 255, .3) solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="imgs-wraper">
+			<ul class="imgs-list">
+				<li><a href="javascript:;"><img src="./img/05/1.jpg" alt="图片"></a></li>
+				<li><a href="javascript:;"><img src="./img/05/2.jpg" alt="图片"></a></li>
+				<li><a href="javascript:;"><img src="./img/05/3.jpg" alt="图片"></a></li>
+				<li><a href="javascript:;"><img src="./img/05/4.jpg" alt="图片"></a></li>
+				<li><a href="javascript:;"><img src="./img/05/5.jpg" alt="图片"></a></li>
+				<li><a href="javascript:;"><img src="./img/05/6.jpg" alt="图片"></a></li>
+				<li><a href="javascript:;"><img src="./img/05/7.jpg" alt="图片"></a></li>
+				<li><a href="javascript:;"><img src="./img/05/8.jpg" alt="图片"></a></li>
+
+				<div class="button-list">
+					<a href="javascript:;" class="actived"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+				</div>
+			</ul>
+
+		</div>
+	</body>
+</html>

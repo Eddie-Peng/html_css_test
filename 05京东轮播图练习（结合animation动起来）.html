@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<style type="text/css">
+			body {
+				background-color: #D3D3D3;
+			}
+
+			.imgs-wraper {
+				width: 590px;
+				height: 470px;
+				margin: 50px auto;
+				overflow: hidden;
+				position: relative;
+			}
+
+			.imgs-list {
+				width: 4720px;
+				/* 将ul元素的字体大小设置为0，避免li之间出现间隙 */
+				font-size: 0;
+				float: left;
+				animation-name: solid_show;
+				animation-duration: 28s;
+				animation-play-state: running;
+				animation-direction: alternate;
+				animation-iteration-count: infinite;
+				animation-timing-function: cubic-bezier(1, .01, .89, .68);
+			}
+
+			.imgs-list li {
+				float: left;
+			}
+
+			.imgs-list:hover {
+				animation-name: solid_show;
+				animation-play-state: paused;
+			}
+
+			.button-list {
+				z-index: 999;
+				position: absolute;
+				bottom: 20px;
+				left: 40px;
+			}
+
+			.button-list a {
+				float: left;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: rgba(255, 255, 255, .3);
+				/* 将背景颜色值设置到内容区，边框和内边距不在有背景颜色 */
+				background-clip: content-box;
+				/* background-clip需要记 */
+				border: 2px solid transparent;
+				margin: 0 3px;
+			}
+
+			.button-list a.actived,
+			.button-list a:hover {
+				background-color: white;
+				border: 2px rgba(255, 255, 255, .3) solid;
+			}
+
+			@keyframes solid_show {
+
+				0% {
+					margin-left: 0px;
+				}
+
+				14% {
+					margin-left: -590px;
+				}
+
+				28% {
+					margin-left: -1180px;
+				}
+
+				42% {
+					margin-left: -1770px;
+				}
+
+				56% {
+					margin-left: -2360px;
+				}
+
+				70% {
+					margin-left: -2950px;
+				}
+
+				84% {
+					margin-left: -3540px;
+				}
+
+				100% {
+					margin-left: -4130px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="imgs-wraper">
+			<ul class="imgs-list">
+				<li><a href="javascript:;"><img src="./img/05/1.jpg" alt="图片"></a></li>
+				<li><a href="javascript:;"><img src="./img/05/2.jpg" alt="图片"></a></li>
+				<li><a href="javascript:;"><img src="./img/05/3.jpg" alt="图片"></a></li>
+				<li><a href="javascript:;"><img src="./img/05/4.jpg" alt="图片"></a></li>
+				<li><a href="javascript:;"><img src="./img/05/5.jpg" alt="图片"></a></li>
+				<li><a href="javascript:;"><img src="./img/05/6.jpg" alt="图片"></a></li>
+				<li><a href="javascript:;"><img src="./img/05/7.jpg" alt="图片"></a></li>
+				<li><a href="javascript:;"><img src="./img/05/8.jpg" alt="图片"></a></li>
+			</ul>
+			<div class="button-list">
+				<a href="javascript:;" class="actived"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+			</div>
+		</div>
+	</body>
+</html>
