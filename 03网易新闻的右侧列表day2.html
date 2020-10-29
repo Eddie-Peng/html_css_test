@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<style type="text/css">
+			body {
+				background-color: #EFF0F4;
+			}
+			a{
+				text-decoration: none;
+			}
+			.news-warpper {
+				width: 300px;
+				height: 357px;
+				border-top: 2px lightgray solid;
+				background-color: white;
+				margin: 50px auto;
+			}
+			.news-title{
+				display: inline-block;
+				border-top: 2px red solid;
+				margin-top: -2px;
+				height: 40px;
+				line-height: 40px;
+				font-weight: bold;
+			}
+			.news-title a{
+				color: #656565;
+			}
+			.news-img a h3{
+				font-size: 18px;
+				font-weight: bold;
+				color: white;
+				margin-top: -30px;
+				margin-left: 12px;
+			}
+			.news-list{
+				font-size: 0;
+				margin-top: 30px;
+				padding-left: 10px;
+			}
+			.news-list li{
+				font-size: 14px;
+				margin-bottom: 20px;
+			}
+			.news-list li::before{
+				content: '■';
+				padding-right: 4px;
+				font-size: 10px;
+				color: #969393;
+			}
+			.news-list a{
+				color: #969393;
+			}
+			.news-list a:hover{
+				color: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="news-warpper">
+			<h2 class="news-title"><a href="">体育</a></h2>
+			<div class="news-img">
+				<a href="#">
+					<img src="./img/03/1.jpeg" alt="费德勒">
+					<h3>费德勒首负迪米 扶额摇头不满发挥</h3>
+				</a>
+			</div>
+			<ul class="news-list">
+				<li><a href="#">乔治:我爱LA 喜欢和LBJ一起打球</a></li>
+				<li><a href="#">格林:3年前降薪就在等KD 特制T恤嘲讽LBJ</a></li>
+				<li><a href="#">塔克4000双鞋让保罗羡慕嫉妒 乔丹被震惊</a></li>
+				<li><a href="#">CBA下季新赛制:常规赛4组循环 增至46轮</a></li>
+			</ul>
+
+		</div>
+	</body>
+</html>

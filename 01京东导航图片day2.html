@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<style type="text/css">
+			body {
+				background-color: #1BC4FB;
+			}
+
+			.imgs-list {
+				width: 190px;
+				height: 470px;
+				/* overflow: hidden;  */
+				margin: 50px auto;
+				background-color: white;
+			}
+
+			/* 问题：在每一个li之间会出现小小的间隙
+					这条间隙出现的原因是html中的空白字符。
+					在每个li之间是有一个换行符的，
+					这种换行符被定义为一个空白符。
+					然后在inline-block时，就产生了间隙。*/
+			/* 解决方法：
+						方法1：将每个li都写在同一行，这不就没有换行符了吗
+						方法2：将闭合的<\/li>放到下一个<li>之前，也没有换行符了
+						方法3：去掉闭合，使Html为我们闭合它。
+						方法4：使这个换行符的font-size变成0。通过改变父节点的font-size来实现。*/
+
+			.imgs-list li {
+				/* float: left; */
+				font-size: 0;
+			}
+
+			.imgs-list li:not(:last-child) {
+				/* margin-bottom: 9px; */
+				margin-bottom: 10px;
+			}
+
+			.imgs-list img {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="imgs-list">
+			<li><a href="javascripe:;"><img src="./img/01/1.jpg" alt="图片1"></a></li>
+			<li><a href="javascripe:;"><img src="./img/01/2.jpg" alt="图片2"></a></li>
+			<li><a href="javascripe:;"><img src="./img/01/3.jpg" alt="图片3"></a></li>
+		</ul>
+	</body>
+</html>
