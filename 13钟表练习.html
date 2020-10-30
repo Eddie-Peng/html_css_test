@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- <link rel="stylesheet" type="text/css" href="css/reset.css" /> -->
+		<!-- <style type="text/css">
+			.my_clock {
+				width: 500px;
+				height: 500px;
+				background-image: url(img/13/bg.png);
+				background-size: cover;
+				margin: 50px auto;
+				background-color: orange;
+				position: relative;
+			}
+
+			.hour_wrapper {
+				width: 500px;
+				height: 150px;
+				overflow: hidden;
+				position: absolute;
+				top: 100px;
+				
+				/* left: 244px; */
+			}
+
+			.hour {
+				height: 300px;
+				width: 10px;
+				background-color: green;
+				margin: 0 auto;
+				animation: clock_run steps(12) 3600s infinite;
+				/* position: absolute;
+				top: 100px;
+				left: 244px; */
+
+			}
+
+			.minute_wrapper {
+				width: 500px;
+				height: 200px;
+				position: absolute;
+				top: 50px;
+				/* left: 246px; */
+				
+				overflow: hidden;
+			}
+
+			.minute {
+				height: 400px;
+				width: 6px;
+				background-color: gray;
+				margin: 0 auto;
+				animation: clock_run steps(60) 3600s infinite;
+				/* position: absolute;
+				top: 50px;
+				left: 246px; */
+
+			}
+
+			.second_wrapper {
+				width: 500px;
+				height: 220px;
+				position: absolute;
+				top: 30px;
+				/* left: 248px; */
+				overflow: hidden;
+				
+			}
+
+			.second {
+				height: 440px;
+				width: 2px;
+				background-color: red;
+				margin: 0 auto;
+				animation: clock_run steps(60) 60s infinite;
+			}
+
+			@keyframes clock_run{
+				from{transform: rotate(0);}
+				to{transform: rotate(360deg);}
+			}
+		</style> -->
+		<!-- 1025 -->
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.my_clock {
+				width: 500px;
+				height: 500px;
+				margin: 0 auto;
+				margin-top: 100px;
+				border-radius: 50%;
+				border: 10px solid black;
+				position: relative;
+				background-image: url(./img/13/bg3.jpg);
+				background-size: cover;
+			}
+
+			.my_clock>div {
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				margin: auto;
+			}
+
+			.hour_wrapper {
+				width: 60%;
+				height: 60%;
+				/* background-color: #1BC4FB; */
+				animation: clock_run 43200s infinite linear;
+			}
+
+			.hour {
+				height: 50%;
+				width: 6px;
+				background-color: #000;
+				margin: 0 auto;
+			}
+
+			.minute_wrapper {
+				width: 70%;
+				height: 70%;
+				/* background-color: green; */
+				animation: clock_run steps(60) 3600s infinite;
+			}
+
+			.minute {
+				height: 50%;
+				width: 4px;
+				background-color: #000000;
+				margin: 0 auto;
+			}
+
+			.second_wrapper {
+				width: 80%;
+				height: 80%;
+				/* background-color: palevioletred; */
+				animation: clock_run steps(60) 60s infinite;
+			}
+
+			.second {
+				height: 50%;
+				width: 2px;
+				margin: 0 auto;
+				background-color: red;
+			}
+
+			@keyframes clock_run {
+				from {
+					transform: rotateZ(0);
+				}
+
+				to {
+					transform: rotateZ(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="my_clock">
+			<!-- 时针 -->
+			<div class="hour_wrapper">
+				<div class="hour"></div>
+			</div>
+			<!-- 分针 -->
+			<div class="minute_wrapper">
+				<div class="minute"></div>
+			</div>
+			<!-- 秒针 -->
+			<div class="second_wrapper">
+				<div class="second"></div>
+			</div>
+		</div>
+	</body>
+</html>
