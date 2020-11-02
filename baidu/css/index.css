@@ -1,0 +1,219 @@
+.clear-float::after,
+.clear-float::before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+body {
+	width: 100%;
+	min-width: 1250px;
+	overflow-y: scroll;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* 头部导航栏的样式 */
+header a {
+	font-size: 13px;
+	color: #222;
+}
+
+header a:hover {
+	color: #315EFB;
+}
+
+header ul.header-left-list {
+	font-size: 0;
+	float: left;
+	height: 60px;
+	line-height: 60px;
+}
+
+header ul.header-right-list {
+	font-size: 0;
+	float: right;
+	height: 60px;
+	line-height: 60px;
+}
+
+header ul.header-left-list {
+	padding-left: 24px;
+}
+
+header ul.header-right-list {
+	/* 为后面的隐藏设置框开启定位模式 */
+	position: relative;
+	padding-right: 24px;
+}
+
+
+header li {
+	float: left;
+}
+
+header ul.header-left-list>li:not(:last-child) {
+	margin-right: 31px;
+}
+
+header ul.header-right-list>li:not(:first-child) {
+	margin-left: 32px;
+}
+
+.header-right-list:last-child .header-img-wrapper {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	border: 1px solid #4e71f2;
+	position: relative;
+	vertical-align: middle;
+}
+
+.header-right-list:last-child .header-img-wrapper img {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	padding: 2px;
+	margin-bottom: 8px;
+}
+
+.header-right-list:last-child .user-name {
+	margin-left: 6px;
+	display: inline-block;
+}
+
+/* 设置框样式 */
+.setting-button>a {
+	display: inline-block;
+	height: 35px;
+	vertical-align: middle;
+	line-height: 35px;
+}
+
+.setting-wrapper {
+	display: none;
+	z-index: 999;
+	position: absolute;
+	text-align: center;
+	width: 84px;
+	border-radius: 12px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+	top: 48px;
+	right: 153.8px;
+	padding: 8px 0;
+}
+
+.setting-button>a:hover~.setting-wrapper,
+.setting-wrapper:hover {
+	display: block;
+}
+
+.setting-wrapper a {
+	display: block;
+	line-height: 28px;
+}
+
+.split-line {
+	display: block;
+	margin: 8px 16px;
+	background: #d7d9e0;
+	height: 1px;
+}
+
+/* 个人信息样式 */
+
+
+.user-info-wrapper {
+	position: absolute;
+	top: 48px;
+	right: 46px;
+	width: 84px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+	text-align: left;
+	padding: 8px 0;
+	border-radius: 12px;
+	display: none;
+}
+
+.user-name-button>a:hover~.user-info-wrapper,
+.user-info-wrapper:hover {
+	display: block;
+}
+
+.user-info-wrapper a {
+	display: block;
+	line-height: 28px;
+	padding-left: 16px;
+}
+
+
+/* 中间搜索框样式 */
+main{
+	width: 1000px;
+	height: 314px;
+	margin: 0 auto;
+}
+#baidu-log-wrapper img{
+	width: 270px;
+	height: 129px;
+	
+}
+
+#baidu-log-wrapper a{
+	display: block;
+	text-align: center;
+}
+
+
+
+
+/* 底部导航栏的样式 */
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	min-width: 1250px;
+	width: 100%;
+}
+
+footer a,
+footer li {
+	color: rgb(145, 149, 163);
+}
+
+footer a:hover {
+	color: rgb(51, 51, 51);
+}
+
+footer {
+	line-height: 40px;
+	font-size: 12px;
+}
+
+footer ul.left-list {
+	float: left;
+}
+
+footer ul.right-list {
+	float: right;
+}
+
+footer li {
+	float: left;
+}
+
+footer ul.left-list>li:first-child {
+	margin-left: 24px;
+}
+
+footer ul.right-list>li:last-child {
+	margin-right: 24px;
+}
+
+footer ul.left-list>li:not(:last-child),
+footer ul.right-list>li:not(:last-child) {
+	margin-right: 20px;
+}
